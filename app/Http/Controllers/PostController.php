@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< Updated upstream
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -27,3 +28,15 @@ class PostController extends Controller
     }
 }
 ?>
+=======
+use Illuminate\Http\Request;
+use App\Models\Post;
+
+class PostController extends Controller
+{
+ public function index(Post $post)
+{
+    return view('posts/index')->with(['posts' => $post->get()]);
+   }
+}
+>>>>>>> Stashed changes

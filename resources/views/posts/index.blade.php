@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
+<<<<<<< Updated upstream
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
@@ -14,6 +15,22 @@
                     <h2 class='title'>{{ $post->title }}</h2>
                     <p class='body'>{{ $post->body }}</p>
                 </div>
+=======
+
+        <!-- Fonts -->
+        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+        
+    </head>
+    <body class="antialiased">
+        <h1>Blog Name</h1>
+        <div class='posts'>
+            @foreach($posts as $post)
+            <div class='post'>
+                <h2 class='title'>{{$post->title}}</h2>
+                <p class='body'>{{$post->body}}</p>
+            </div>
+>>>>>>> Stashed changes
             @endforeach
         </div>
     </body>

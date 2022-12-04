@@ -1,6 +1,11 @@
 <?php
 use Illuminate\Support\Facades\Route;
+<<<<<<< Updated upstream
 use App\Http\Controllers\PostController;      //追加
+=======
+use App\Http\Controllers\PostController;
+
+>>>>>>> Stashed changes
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,5 +16,10 @@ use App\Http\Controllers\PostController;      //追加
 | contains the "web" middleware group. Now create something great!
 |
 */
+<<<<<<< Updated upstream
 Route::get('/', [PostController::class, 'index']);
 ?>
+=======
+
+Route::get('/', [PostController::class, 'index']);
+>>>>>>> Stashed changes
