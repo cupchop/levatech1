@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
+       
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-   
    
     </head> 
     <body class="antialiased">
@@ -19,7 +19,10 @@
                 </div>
         </div>
         <div class='footer'>
-             <a href="/">戻る</a>
+             <a href="/posts/{{ $post->id}}/edit">edit</a>
+        </div>
+        <div class="footer">
+          <a href="/">戻る</a>
         </div>
     </body>
 </html>
